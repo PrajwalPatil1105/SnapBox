@@ -1,0 +1,98 @@
+.CounterPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 16px;
+  width: 100vw;
+  background-color: black;
+  max-width: 400px;
+  height: 300px;
+  transition: background 0.8s cubic-bezier(0.25, 0.8, 0.5, 1);
+  box-shadow: 0 0px 40px rgb(44, 43, 43);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.counterTitle {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.counterValue {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.counterButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.counterBtn {
+  padding: 8px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.increment,
+.decrement {
+  background: black;
+  color: white;
+  border: 2px solid #333;
+}
+
+.reset {
+  background: #3a3a39;
+  color: white;
+}
+
+.counterBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .counterValue {
+    font-size: 40px;
+  }
+
+  .counterBtn {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .counterContainer {
+    padding: 20px;
+    width: 80%;
+    height: auto;
+  }
+
+  .counterValue {
+    font-size: 32px;
+  }
+
+  .counterBtn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

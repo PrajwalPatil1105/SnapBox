@@ -1,0 +1,112 @@
+.dashboardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.userProfile {
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  font-size: 19px;
+  cursor: none;
+  background-color: #121212;
+  padding: 10px 30px;
+  font-weight: 500;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 36%;
+  max-width: 1200px;
+  height: 25em;
+}
+
+.card {
+  background: #121212;
+  border-radius: 16px;
+  text-align: center;
+  border: 3px solid #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: attr(data-hover-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(90deg);
+  color: #ff926b;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0px 10px rgba(175, 173, 173, 0.4);
+}
+
+.card:hover::before {
+  transform: translate(-50%, -50%) rotateY(0);
+  opacity: 1;
+}
+
+.card > * {
+  transition: opacity 0.3s ease;
+}
+
+.card:hover > * {
+  opacity: 0;
+}
+.card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .card {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gridContainer {
+    width: 90%;
+    height: 17em;
+  }
+  .userProfile {
+    font-size: 16px;
+    right: 10px;
+  }
+
+  .card::before {
+    font-size: 12px;
+  }
+  .card {
+    font-size: 14px;
+    padding: 30px;
+    border-radius: 8px;
+  }
+}
