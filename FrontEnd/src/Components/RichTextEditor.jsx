@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import styles from "../styles/RichTextEditor.module.css";
+import styles from "../Styles/RichTextEditor.module.css";
 import toast, { Toaster } from "react-hot-toast";
 
 function RichTextEditor() {

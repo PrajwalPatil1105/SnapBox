@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import styles from "../styles/Dashboard.module.css";
+import styles from "../Styles/Dashboard.module.css";
 import { User } from "lucide-react";
 
 function Dashboard() {
