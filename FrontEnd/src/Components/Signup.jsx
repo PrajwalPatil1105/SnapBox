@@ -57,7 +57,7 @@ function Signup() {
       toast.success("Account Created Successfully");
       setTimeout(() => {
         navigate("/Login");
-      }, 1600);
+      }, 1800);
     }
   }
 
