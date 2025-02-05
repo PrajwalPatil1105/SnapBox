@@ -3,7 +3,7 @@ import UserTrend from "./Components/UserTrend";
 import Dashboard from "./Components/Dashboard";
 import Counter from "./Components/Counter";
 import UserForm from "./Components/UserForm";
-import Signup from "./Components/SignUp";
+import Signup from "./Components/Signup";
 import RichTextEditor from "./Components/RichTextEditor";
 import LandingPage from "./Components/LandingPage";
 import Login from "./Components/Login";
