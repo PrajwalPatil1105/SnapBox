@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UserTrend from "./Components/UserTrend";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./Components/Dashboard";
 import Counter from "./Components/Counter";
-import UserForm from "./components/UserForm";
+import UserForm from "./Components/UserForm";
 import Signup from "./Components/SignUp";
-import RichTextEditor from "./components/RichTextEditor";
+import RichTextEditor from "./Components/RichTextEditor";
 import LandingPage from "./Components/LandingPage";
 import Login from "./Components/Login";
 import "./App.css";
