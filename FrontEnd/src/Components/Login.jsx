@@ -12,7 +12,7 @@ function Login() {
   const [SerMsg, setSerMsg] = useState();
 
   useEffect(() => {
-    toast("Here is a Demo of Login Page of SignUp User");
+    toast("Here is a Demo of Login Page of User");
   }, []);
 
   const handleLoginSuccess = () => {

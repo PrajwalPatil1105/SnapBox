@@ -11,7 +11,7 @@ function RichTextEditor() {
   const [showMessage, setShowMessage] = useState(false);
 
   useEffect(() => {
-    toast("Data Will Be Auto Saved For Every 10sec");
+    toast("Data Will Be Auto Saved For Every 8 sec");
   }, []);
 
   const modules = {
@@ -27,7 +27,7 @@ function RichTextEditor() {
       localStorage.setItem("richTextData", value);
       toast.success("Data Auto Saved");
       setTimeout(() => setShowMessage(false), 2000);
-    }, 10000);
+    }, 8000);
     return () => clearInterval(intervalId);
   }, [value]);
 
@@ -50,9 +50,9 @@ function RichTextEditor() {
             color: "#aaa",
             backgroundColor: "transparent",
             border: "2px solid #aaa",
-            marginTop: "65em",
+            marginTop: "55em",
             fontFamily: "Poppins",
-            fontSize: "0.6em",
+            fontSize: "0.7em",
             fontWeight: "400",
             marginLeft: "3em",
           },
